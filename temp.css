@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Add some padding to the top of the body to prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+
+#navbar {
+    width: 100%;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Make sure the header is on top of other content */
+    background-color: white; /* Add a background color to avoid transparency issues */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.bord-bot {
+    border-bottom: 1px solid #dee2e6; /* Optional: Add a bottom border for separation */
+}
+
+/* Styling for the nav items */
+.nav-colour {
+    color: #000; /* Default color */
+}
+
+.nav-colour:hover {
+    color: #f44336; /* Color on hover */
+}
